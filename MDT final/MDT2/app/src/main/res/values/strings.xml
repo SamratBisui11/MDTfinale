@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MDT</string>
+    <string name="value">\"SERIAL: \"</string>
+    <string name="playsongs" />
+    <string name="col1" />
+    <string name="col2" />
+    <string name="col3" />
+    <string name="row1Name" />
+    <string name="subodh" />
+    <string name="row1Surname" />
+    <string name="row2Name" />
+    <string name="row2Age" />
+    <string name="row2Surname" />
+    <string name="row3Name" />
+    <string name="row3Age" />
+    <string name="row3Surname" />
+    <string name="row1Age" />
+    <string name="x_value_label">X-axis rotation value: </string>
+    <string name="y_value_label">Y-axis rotation value: </string>
+    <string name="z_value_label">Z-axis rotation value: </string>
+    <string name="x_value">%1$.2f°</string>
+        <string name="y_value">%1$.2f°</string>
+        <string name="z_value">%1$.2f°</string>
+        <string name="temperature">Temperature</string>
+        <string name="temperature_label">Temperature: %1$.1f °C</string>
+        <string name="up">UP</string>
+        <string name="down">DOWN</string>
+        <string name="play_pause">PLAY/PAUSE</string>
+    </resources>

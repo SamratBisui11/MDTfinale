@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sound">
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="154dp"
+        android:layout_marginBottom="72dp"
+        android:onClick="upButton"
+        android:text="UP"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="287dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="63dp"
+        android:outlineSpotShadowColor="@color/purple_200"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="52dp"
+        android:onClick="downButton"
+        android:text="DOWN"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="142dp"
+        android:shadowColor="@color/purple_200"
+        android:text="CHECK SOUND"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="49dp"
+        android:text="To check your sound quality please click on the CHECK SOUND button"
+        app:layout_constraintBottom_toTopOf="@+id/song"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+</android.support.constraint.ConstraintLayout>

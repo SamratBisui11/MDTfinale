@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Subodh">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="64dp"
+        android:background="#FFFFFF"
+        android:text="Welcome!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginBottom="134dp"
+        android:text="Check Your Mobile's Health"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/battery"
+        app:layout_constraintEnd_toStartOf="@+id/camera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/battery"
+        android:layout_width="89dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/calllog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/calllog"
+        app:srcCompat="@drawable/batteryinformation" />
+
+    <ImageView
+        android:id="@+id/calllog"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginBottom="110dp"
+        app:layout_constraintBottom_toTopOf="@+id/software"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/calllogi" />
+
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_width="84dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/calllog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/software"
+        app:layout_constraintTop_toTopOf="@+id/calllog"
+        app:srcCompat="@drawable/camerainformation" />
+
+    <ImageView
+        android:id="@+id/hardware"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/software"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/software"
+        app:srcCompat="@drawable/hardandsoft" />
+
+    <ImageView
+        android:id="@+id/software"
+        android:layout_width="87dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="49dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/hardware"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/information" />
+
+    <ImageView
+        android:id="@+id/sensor"
+        android:layout_width="88dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="29dp"
+        app:layout_constraintBottom_toBottomOf="@+id/software"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/software"
+        app:layout_constraintTop_toTopOf="@+id/software"
+        app:srcCompat="@drawable/sensorinformation" />
+
+    <ImageView
+        android:id="@+id/sound"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/display"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/display"
+        app:srcCompat="@drawable/soundinformation" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="76dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="49dp"
+        android:text="Battery Info"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/software"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="1dp"
+        android:text="call log"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/software"
+        app:layout_constraintStart_toStartOf="@+id/calllog"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="314dp"
+        android:layout_marginEnd="52dp"
+        android:text="Camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="System Info"
+        app:layout_constraintEnd_toEndOf="@+id/software"
+        app:layout_constraintTop_toBottomOf="@+id/software" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:text="Hardware /software"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="42dp"
+        android:text="Sensor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sensor" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="18dp"
+        android:text="Sound Info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sound" />
+
+    <ImageView
+        android:id="@+id/display"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="72dp"
+        android:src="@drawable/display"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/disp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="18dp"
+        android:text="displayInfo"
+        app:layout_constraintStart_toStartOf="@+id/display"
+        app:layout_constraintTop_toBottomOf="@+id/display" />
+
+</android.support.constraint.ConstraintLayout>
